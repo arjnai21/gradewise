@@ -42,7 +42,7 @@ export default function Chat() {
   return (
     <Card className="min-h-screen border-none rounded-none">
       {/* Header */}
-      <CardHeader className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <CardHeader className="border-b border-gray-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="max-w-4xl mx-auto w-full">
         <CardTitle className="text-2xl">Spanish Quiz #1</CardTitle>
           <CardDescription>Good luck!</CardDescription>
@@ -68,8 +68,8 @@ export default function Chat() {
                 )}
                 <Card className={`max-w-[80%] ${
                   m.role === 'user' 
-                    ? 'bg-primary text-primary-foreground' 
-                    : ''
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-50'
                 }`}>
                   <CardContent className="p-3">
                     <p className="text-sm font-medium">
@@ -93,7 +93,7 @@ export default function Chat() {
       </CardContent>
 
       {/* Footer with input */}
-      <CardFooter className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <CardFooter className="border-t border-gray-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <form onSubmit={handleSubmit} className="max-w-4xl mx-auto w-full flex gap-2">
           <Input
             value={input}
