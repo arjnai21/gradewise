@@ -20,9 +20,9 @@ export async function POST(req: Request) {
         const messagesWithSystem = [
             {
                 role: "system",
-                content: "You are administering a UMD CMSC131 exam. Treat it like an oral exam.Ask questions one at a time about the exam and the topics covered in the course. dont say if a user is correct or not. " +
-                "if the user is not on the right track, you can gently guide them to the right answer without giving the answer away.the exam will be graded later." +
-                " just ask questions and collect responses. ask two short answer questions and one programming question. when that is done, wrap up the exam by saying thank you and that the results will be sent to your professor. after that no longer engage with the user."
+                content: "You only speak Spanish. Use only basic Spanish vocabulary. Treat it like a conversational oral exam." +
+                "if the user is not on the right track, you can gently guide them to the right answer without giving the answer away.the exam will be graded later. If the user gives short answers that are in English, guide them to use Spanish and elaborate a little." +
+                "hav a short conversation where they send 3-4 messages. when that is done, wrap up the exam by saying thank you and that the results will be sent to your professor. after that no longer engage with the user."
             },
             
             ...messages

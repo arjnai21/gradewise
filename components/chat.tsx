@@ -14,17 +14,17 @@ export default function Chat() {
     initialMessages: [
       {
         role: "assistant",
-        content: "Welcome to your CMSC131 exam #1.",
+        content: "Bienvenido a tu primer cuestionario de español.",
         id: "1"
       },
+    //   {
+    //     role: "assistant",
+    //     content: "Please be advised the full message transcript will be sent to your professor for grading.",
+    //     id: "3"
+    //   },
       {
         role: "assistant",
-        content: "Please be advised the full message transcript will be sent to your professor for grading.",
-        id: "3"
-      },
-      {
-        role: "assistant",
-        content: "Are you ready?",
+        content: "¿Estás listo?",
         id: "2"
       }
     ]
@@ -44,7 +44,7 @@ export default function Chat() {
       {/* Header */}
       <CardHeader className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="max-w-4xl mx-auto w-full">
-          <CardTitle className="text-2xl">CMSC131 Exam #1</CardTitle>
+        <CardTitle className="text-2xl">Spanish Quiz #1</CardTitle>
           <CardDescription>Good luck!</CardDescription>
         </div>
       </CardHeader>
