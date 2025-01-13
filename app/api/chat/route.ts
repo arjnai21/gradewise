@@ -31,6 +31,11 @@ export async function POST(req: Request) {
         const response = streamText({
             model: openai("gpt-4o-mini"),
             messages: messagesWithSystem, // Use the updated messages array
+            experimental_providerMetadata: {
+                openai: {
+                  store: true,
+                },
+              },
         });
 
         // console.log(response);
